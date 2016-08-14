@@ -3,7 +3,7 @@ using System.Collections;
 
 public class movePipes : MonoBehaviour {
 
-	public Vector2 velocity = new Vector2(-4, 0);
+	public Vector2 velocity = new Vector2(-5, 0);
 
 	private Rigidbody2D rb;
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -16,5 +17,22 @@ public class PlayerController : MonoBehaviour {
 			rb.velocity = Vector2.zero;
 			rb.AddForce (jumpForce);
 		}
+		CheckYPos ();
+	}
+
+	private void OnCollision2D () {
+
+	}
+
+	private void CheckYPos () {
+		Vector2 screenPos = Camera.main.WorldToScreenPoint (transform.position);
+
+		if (screenPos.y > Screen.height || screenPos.y < 0) {
+			OnDie ();
+		}
+	}
+
+	private void OnDie () {
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
 	}
 }
