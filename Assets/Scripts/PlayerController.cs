@@ -44,6 +44,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void OnDie () {
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+		SceneManager.LoadScene ("Menu");
 	}
 }

@@ -15,6 +15,10 @@ public class ScoreKeeper : MonoBehaviour {
 	public void IncreaseScore() {
 		score++;
 		UpdateScore ();
+		PlayerPrefs.SetInt("currentHighScore", score);
+		if (score > PlayerPrefs.GetInt("highScore")) {
+			PlayerPrefs.SetInt ("highScore", score);
+		}
 	}
 
 	private void UpdateScore() {
