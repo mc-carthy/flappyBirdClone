@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: efdb4a30e580148099ab079689bb7ab2
-timeCreated: 1471185072
+timeCreated: 1471185769
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bird_0
+    21300002: bird_1
+    21300004: bird_2
+    21300006: bird_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +42,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +53,85 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bird_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 278
+        width: 118
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 31}
+        - {x: -59, y: -29}
+        - {x: -42, y: -31}
+        - {x: 32, y: -31}
+        - {x: 59, y: -13}
+        - {x: 59, y: 11}
+        - {x: 55, y: 31}
+    - name: bird_1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 278
+        width: 116
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 29}
+        - {x: -58, y: 19}
+        - {x: -58, y: -19}
+        - {x: -53, y: -27}
+        - {x: -40, y: -29}
+        - {x: 46, y: -29}
+        - {x: 58, y: -15}
+        - {x: 58, y: 29}
+    - name: bird_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 278
+        width: 118
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 31}
+        - {x: -59, y: 22}
+        - {x: -59, y: -14}
+        - {x: -52, y: -27}
+        - {x: -44, y: -31}
+        - {x: 27, y: -31}
+        - {x: 59, y: -20}
+        - {x: 59, y: 11}
+        - {x: 25, y: 31}
+    - name: bird_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 278
+        width: 116
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 30}
+        - {x: -56, y: 17}
+        - {x: -58, y: 9}
+        - {x: -58, y: -10}
+        - {x: -52, y: -25}
+        - {x: -47, y: -30}
+        - {x: 42, y: -30}
+        - {x: 58, y: -22}
+        - {x: 58, y: 11}
+        - {x: 23, y: 30}
     outline: []
   spritePackingTag: 
   userData: 
