@@ -11,4 +11,12 @@ public class movePipes : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 		rb.velocity = velocity;
 	}
+
+	private void Update () {
+		Vector2 screenPos = Camera.main.WorldToScreenPoint (transform.position);
+
+		if (screenPos.x < -5f) {
+			Destroy(this.gameObject);
+		}
+	}
 }
