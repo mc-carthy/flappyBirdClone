@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class movePipes : MonoBehaviour {
+public class MovePipes : MonoBehaviour {
 
 	public Vector2 velocity = new Vector2(-5, 0);
 

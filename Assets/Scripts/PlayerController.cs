@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rb;
 	private bool isControllable = true;
+	private ScoreKeeper sk;
 
 	private void Start () {
 		rb = GetComponent<Rigidbody2D> ();
+		sk = FindObjectOfType<ScoreKeeper> ();
 	}
 
 	private void Update () {
@@ -25,6 +27,12 @@ public class PlayerController : MonoBehaviour {
 
 	private void OnCollisionEnter2D (Collision2D col) {
 		isControllable = false;
+	}
+
+	private void OnTriggerEnter2D (Collider2D col) { 
+		if (col.tag == "pipeGap") {
+			sk.IncreaseScore ();
+		}
 	}
 
 	private void CheckYPos () {

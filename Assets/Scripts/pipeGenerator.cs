@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pipeGenerator : MonoBehaviour {
+public class PipeGenerator : MonoBehaviour {
 
 	public GameObject pipePair;
 	public float minY, maxY;
